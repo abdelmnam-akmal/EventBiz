@@ -1,0 +1,14 @@
+@keyframes Moving {
+    0%{
+        margin-top: .4px;
+        opacity: .5
+    }
+    50%{
+        margin-top: .8%;
+        opacity: .8
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1
+    }
+}
