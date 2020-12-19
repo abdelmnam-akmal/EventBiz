@@ -13,7 +13,14 @@ $(function () {
         $('#' + $(this).data('info')).addClass('active').siblings().removeClass('active');
     });
 
-    // scroll to div on click
+    // scroll To the block that it contact with the same link
+    $('.navbar-slide .links li').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#' + $(this).data('scroll')).offset().top + 1
+        }, 1000);
+    });
+
+    // button on the header scroll to div on click
     $('.header .icon-down i').on('click', function () {
         $('html, body').animate({
             scrollTop: $('.about-event').offset().top
@@ -29,9 +36,46 @@ $(function () {
             'left': ($('.navbar-slide').hasClass('navbar-collapsed')) ? 0: -$('.navbar-slide').innerWidth()
         }, 500);
     });
+
+    // window on scroll make many functions
+    $(window).on('scroll', function () {
+        // add active link on links in navbar when window is scroll
+        $('.block').each(function () {
+            if ($(window).scrollTop() > $(this).offset().top) {
+                var blockId = $(this).attr('id');
+                $('.navbar-slide .links li').removeClass('active');
+                $('.navbar-slide .links li[data-scroll="' + blockId + '"]').addClass('active');
+            }
+        });
+
+        // counter start at window scroll to the timer offset
+        if ($(window).scrollTop() > 1880) {
+            $('.count').countTo();
+            $('.timer .timer-show div span').removeClass('count');
+        }
+    });
+
+    // animated overlay on speaker images
+    $('.speaker-info .overlay').css('top', -$('.speaker-info .overlay').innerHeight());
+    $('.speaker-info div').on({
+        mouseenter: function () {$(this).find('.overlay').animate({
+            'top': 0
+        }, 500)},
+        mouseleave: function () {$(this).find('.overlay').animate({
+            'top': -$('.overlay').innerHeight()
+        }, 700)}
+    });
+    $('.speaker-info .overlay').on('click', function () {
+        $(this).animate({
+            'top': -$('.overlay').innerHeight()
+        }, 700);
+    });
+    $('.speaker-info .overlay ul li').on('click', function (e) {
+        e.stopPropagation();
+    });
 })
 
-
+// the timer which in the header block
 window.setInterval(function(){
     var d = new Date();
     var x = document.getElementById("hours");
@@ -44,7 +88,3 @@ window.setInterval(function(){
     a.innerHTML = m;
     v.innerHTML = s;
   }, 1000);
-
-
-
-
