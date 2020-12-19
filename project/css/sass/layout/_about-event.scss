@@ -1,0 +1,47 @@
+.about-event{
+    background-color: $flatEEE;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .about-info{
+        h2:first-child{
+            color: $flat333;
+            margin-bottom: 20px;
+        }
+        p{
+            color: $flat555;
+            font-size: 14px;
+            line-height: 1.8;
+            &:first-of-type{
+                margin-bottom: 30px;
+            }
+        }
+        .btns-show{
+            margin: 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid $flatDDD;
+            li{
+                margin-right: 25px;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: $transition;
+                &.active{
+                    border-bottom: 2px solid $flatColor1;
+                }
+            }
+        }
+        .info-about{
+            .show-info{
+                display: none !important;
+                &.active{
+                    display: flex !important;
+                }
+                .image-show{
+                    transition: $transition;
+                }
+                .info-image{
+                    transition: $transition;
+                }
+            }
+        }
+    }
+}
