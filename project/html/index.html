@@ -10,14 +10,14 @@
 </head>
 <body>
     <!--Start Navbar-->
-    <div class="navbar-slide position-fixed">
+    <div class="navbar-slide position-fixed j-for">
         <div class="image-navbar">
             <img src="images/logo-dark.png" alt="Web Logo">
         </div>
         <ul class="list-unstyled text-uppercase links">
-            <li class="active" data-scroll="header">home</li>
+            <li class="active day-1" data-scroll="header">home</li>
             <li data-scroll="speakers">speakers</li>
-            <li data-scroll="">schudels</li>
+            <li data-scroll="scheudels">scheudels</li>
             <li data-scroll="">sponsors</li>
             <li data-scroll="">tichets</li>
             <li data-scroll="">info</li>
@@ -70,21 +70,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="image-parent">
+                    <div class="image-parent wow fadeInUp" data-wow-offset="170">
                         <img class="img-fluid" src="images/screen-1.png" alt="About">
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div class="about-info">
+                    <div class="about-info wow fadeInRight" data-wow-offset="170">
                         <h2>What is EventBiz?</h2>
                         <p>Eventbiz is largest digital event of this year. We use large audiotorium with capacity of fifty thousand participants is also equipped with advanced facilities.</p>
                         <ul class="list-unstyled btns-show">
-                            <li class="active d-inline-block" data-info="topics">Topics</li>
+                            <li class="active day-1 d-inline-block" data-info="topics">Topics</li>
                             <li class="d-inline-block" data-info="workshops">Workshops</li>
                             <li class="d-inline-block" data-info="information">Information</li>
                         </ul>
                         <div class="info-about">
-                            <div id="topics" class="row show-info d-flex align-items-center active">
+                            <div id="topics" class="row show-info d-flex align-items-center active day-1">
                                 <div class="col-md-3 image-show d-inline-block">
                                     <img class="img-fluid rounded-circle" src="images/1.jpg" alt="Topic">
                                 </div>
@@ -117,7 +117,7 @@
     <!--End About Event--><!--Start Speakers-->
     <div id="speakers" class="speakers block">
         <div class="container">
-            <div class="header-speakers text-center">
+            <div class="header-speakers text-center header-follow">
                 <h2><span>Event</span> Speakers</h2>
                 <p>We invites digital experts arround the world</p>
             </div>
@@ -170,7 +170,6 @@
                 <div class="col-md-3 speaker-info">
                     <div class="position-relative wow fadeInRight" data-wow-offset="100">
                         <div class="overlay position-absolute text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos deleniti doloribus recusandae ullam quod natus inventore laudantium nulla?
                             <ul class="list-unstyled">
                                 <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
                                 <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
@@ -185,7 +184,6 @@
                 <div class="col-md-3 speaker-info">
                     <div class="position-relative wow fadeInRight" data-wow-offset="100" data-wow-delay=".2s">
                         <div class="overlay position-absolute text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos deleniti doloribus recusandae ullam quod natus inventore laudantium nulla?
                             <ul class="list-unstyled">
                                 <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
                                 <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
@@ -200,7 +198,6 @@
                 <div class="col-md-3 speaker-info">
                     <div class="position-relative wow fadeInRight" data-wow-offset="100" data-wow-delay=".4s">
                         <div class="overlay position-absolute text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos deleniti doloribus recusandae ullam quod natus inventore laudantium nulla?
                             <ul class="list-unstyled">
                                 <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
                                 <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
@@ -215,7 +212,6 @@
                 <div class="col-md-3 speaker-info">
                     <div class="position-relative wow fadeInRight" data-wow-offset="100" data-wow-delay=".6s">
                         <div class="overlay position-absolute text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos deleniti doloribus recusandae ullam quod natus inventore laudantium nulla?
                             <ul class="list-unstyled">
                                 <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
                                 <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
@@ -266,14 +262,730 @@
             </div>
         </div>
     </div>
-    <!--End Timer-->
+    <!--End Timer--><!--Start Scheudels-->
+    <div id="scheudels" class="scheudels block">
+        <div class="scheudels-header header-follow text-center">
+            <h2><span>Event</span> Schedules</h2>
+            <span>Do not miss it and be sure to attend</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 btns-parent">
+                    <div class="d-flex justify-content-center">
+                        <div>
+                            <ul class="list-unstyled d-flex">
+                                <li class="text-center active" data-change=".day-1">
+                                    <h5>Day <span>01</span></h5>
+                                    <span>3 August, 2020</span>
+                                </li>
+                                <li class="text-center" data-change=".day-2">
+                                    <h5>Day <span>02</span></h5>
+                                    <span>4 August, 2020</span>
+                                </li>
+                                <li class="text-center" data-change=".day-3">
+                                    <h5>Day <span>03</span></h5>
+                                    <span>5 August, 2020</span>
+                                </li>
+                                <li class="text-center" data-change=".day-4">
+                                    <h5>Day <span>04</span></h5>
+                                    <span>6 August, 2020</span>
+                                </li>
+                                <li class="text-center" data-change=".day-5">
+                                    <h5>Day <span>05</span></h5>
+                                    <span>7 August, 2020</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs stupid active day-1">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">08:00 - 10:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/111.jpg" alt="Ben">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Ben Sheridan</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs active day-1">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">12:00 - 14:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/22.jpg" alt="Sophia">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Sophie Lana</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs active day-1">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">16:00 - 18:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/33.jpg" alt="James">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>James Hoult</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs active day-1">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">20:00 - 22:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/4.jpg" alt="Oscar">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Oscar Helman</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-2 stupid">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">08:00 - 12:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/5.jpg" alt="Rose">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Rose Shipp</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-2">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">12:00 - 14:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/6.jpg" alt="Isaac">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Isaac Nicholas</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-2">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">16:00 - 18:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/7.jpg" alt="John">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>John Arnold</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-2">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">20:00 - 22:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/111.jpg" alt="Ben">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Ben Sheridan</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-3 stupid">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">08:00 - 12:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/22.jpg" alt="Sophia">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Sophie Lana</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-3">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">12:00 - 14:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/33.jpg" alt="James">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>James Hoult</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-3">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">16:00 - 18:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/4.jpg" alt="Oscar">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Oscar Helman</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-3">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">20:00 - 22:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/5.jpg" alt="Rose">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Rose Shipp</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-4 stupid">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">08:00 - 12:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/6.jpg" alt="Isaac">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Isaac Nicholas</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-4">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">12:00 - 14:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/7.jpg" alt="John">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>John Arnold</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-4">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">16:00 - 18:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/111.jpg" alt="Ben">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Ben Sheridan</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-4">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">20:00 - 22:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/22.jpg" alt="Sophia">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Sophie Lana</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-5 stupid">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">08:00 - 10:00 AM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/111.jpg" alt="Ben">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Ben Sheridan</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-5">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">12:00 - 14:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/22.jpg" alt="Sophia">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Sophie Lana</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-5">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">16:00 - 18:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/33.jpg" alt="James">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>James Hoult</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 parent-divs day-5">
+                    <div class="row">
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="time-scheu"> 
+                                <span class="d-block">20:00 - 22:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="image-scheu">
+                                <div class="overlay">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                        <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
+                                        <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
+                                    </ul>
+                                </div>
+                                <img class="img-fluid rounded-circle" src="images/4.jpg" alt="Oscar">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-center">
+                            <div class="header-scheu">
+                                <h6>Oscar Helman</h6>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="info-scheu">
+                                <h4>Introduction WordPress</h4>
+                                <p>In this session we will discuss about digital topics in detail. You need laptops and other tech support equipment. This session will last for 2 hours. So prepare yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Scheudels-->
 
 
     <script src="js/jQuery-3.5.1.js"></script>
     <script src="js/main-min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
 </body>
 </html>

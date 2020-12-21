@@ -2,4 +2,16 @@ body{
     font-family: 'Poppins', sans-serif;
     height: 8000px;
     overflow-x: hidden;
+    .header-follow{
+        margin-bottom: 60px;
+        h2{
+            margin-bottom: 20px;
+            span{
+                color: $flatColor1;
+            }
+        }
+        p{
+            color: $flat555;
+        }
+    }
 }

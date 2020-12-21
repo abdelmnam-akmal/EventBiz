@@ -1,25 +1,12 @@
 .speakers{
     padding-top: 100px;
     padding-bottom: 100px;
-    .header-speakers{
-        margin-bottom: 60px;
-        h2{
-            margin-bottom: 20px;
-            span{
-                color: $flatColor1;
-            }
-        }
-        p{
-            color: $flat555;
-        }
-    }
     .speaker-info{
         margin-bottom: 30px;
         cursor: pointer;
         div{
             overflow: hidden;
             .overlay{
-                top: 0;
                 left: 0;
                 right: 0;
                 width: 100%;
@@ -29,6 +16,7 @@
                 padding-top: 50px;
                 font-size: 15px;
                 line-height: 1.8;
+                transition: .5s;
                 ul{
                     margin-top: 20px;
                     li{
@@ -36,6 +24,11 @@
                         font-size: 18px;
                         cursor: pointer;
                     }
+                }
+            }
+            &:hover{
+                .overlay{
+                    top: 0 !important;
                 }
             }
         }

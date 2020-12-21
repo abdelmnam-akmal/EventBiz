@@ -1,18 +1,28 @@
 $(function () {
 
     'use strict';
+
+    // start wow js
+    new WOW().init();
     // header height set by js
     $('.header').height($(window).height());
 
-    // add active link on click
+    // add active link on click & on scroll to his block
     $('.navbar-slide .links li').on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
+    // add active link on links in event about
     $('.btns-show li').on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
         $('#' + $(this).data('info')).addClass('active').siblings().removeClass('active');
     });
-
+    // add active link on links in scheudels
+    $('.scheudels .btns-parent div div ul li').on('click', function () {
+        console.log('run');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.scheudels .parent-divs').removeClass('active').fadeOut();
+        $($(this).data('change')).addClass('active').fadeIn();
+    });
     // scroll To the block that it contact with the same link
     $('.navbar-slide .links li').on('click', function () {
         $('html, body').animate({
@@ -28,7 +38,6 @@ $(function () {
     });
 
     // navbar slider
-    $('.navbar-slide').css('left', -$('.navbar-slide').innerWidth());
     $('.btn-navbar').on('click', function () {
         $(this).find('i').toggleClass('fa-bars fa-times');
         $('.navbar-slide').toggleClass('navbar-collapsed');
@@ -55,24 +64,8 @@ $(function () {
         }
     });
 
-    // animated overlay on speaker images
+    // animated overlay on speakers images
     $('.speaker-info .overlay').css('top', -$('.speaker-info .overlay').innerHeight());
-    $('.speaker-info div').on({
-        mouseenter: function () {$(this).find('.overlay').animate({
-            'top': 0
-        }, 500)},
-        mouseleave: function () {$(this).find('.overlay').animate({
-            'top': -$('.overlay').innerHeight()
-        }, 700)}
-    });
-    $('.speaker-info .overlay').on('click', function () {
-        $(this).animate({
-            'top': -$('.overlay').innerHeight()
-        }, 700);
-    });
-    $('.speaker-info .overlay ul li').on('click', function (e) {
-        e.stopPropagation();
-    });
 })
 
 // the timer which in the header block
