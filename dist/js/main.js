@@ -204,6 +204,13 @@ $(function () {
 
     // animated overlay on speakers images
     $('.speaker-info .overlay').css('top', -$('.speaker-info .overlay').innerHeight());
+
+    // animated carousel to they say block
+    $('.say .btns-say-parent ul li').on('click', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.say .say-info').fadeOut().removeClass('active');
+        $($(this).data('show')).addClass('active').fadeIn();
+    });
 })
 
 // the timer which in the header block

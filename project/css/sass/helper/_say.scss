@@ -1,0 +1,52 @@
+.say{
+    background: url('../images/say.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: $flatFFF;
+    .overlay{
+        background-color: rgba(0, 0, 0, .7);
+    }
+    .say-info-parent{
+        .say-info{
+            display: none;
+            &.active{
+                display: block;
+            }
+            div{
+                padding-right: 20px;
+                padding-left: 20px;
+                div{
+                    i{
+                        margin-top: 6px;
+                        margin-right: 20px;
+                        color: $flatColor1;
+                    }
+                }
+                span{
+                    color: $flatColor1;
+                    font-size: 15px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    .btns-say-parent{
+        margin-top: 60px;
+        ul{
+            li{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $flatFFF;
+                margin-right: 15px;
+                transition: $transition;
+                cursor: pointer;
+                &.active{
+                    background-color: transparent;
+                    border: 2px solid $flatFFF;
+                }
+            }
+        }
+    }
+}
