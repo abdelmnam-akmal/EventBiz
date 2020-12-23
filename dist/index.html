@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,400&display=swap">
 </head>
 <body>
+    <!--button scroll to up-->
+    <div class="button-up position-fixed">
+        <i class="fas fa-level-up-alt"></i>
+    </div>
+    <!--button scroll to up-->
     <!--Start Navbar-->
     <div class="navbar-slide position-fixed j-for">
         <div class="image-navbar">
@@ -20,17 +25,8 @@
             <li data-scroll="scheudels">scheudels</li>
             <li data-scroll="sponsors">sponsors</li>
             <li data-scroll="tickets">tichets</li>
-            <li data-scroll="">info</li>
+            <li data-scroll="info">info</li>
         </ul>
-        <ul class="list-unstyled social-media">
-            <li class="d-inline-block"><i class="fab fa-facebook-f fa-fw"></i></li>
-            <li class="d-inline-block"><i class="fab fa-twitter fa-fw"></i></li>
-            <li class="d-inline-block"><i class="fab fa-instagram fa-fw"></i></li>
-            <li class="d-inline-block"><i class="fab fa-youtube fa-fw"></i></li>
-            <li class="d-inline-block"><i class="fab fa-linkedin-in fa-fw"></i></li>
-            <li class="d-inline-block"><i class="fab fa-google fa-fw"></i></li>
-        </ul>
-        <span class="d-inline-block"><span class="rounded-circle d-inline-block">A</span>Abdelmoneam</span>
         <button class="btn position-fixed btn-navbar"><i class="fas fa-bars fa-fw"></i></button>
     </div>
     <!--End Navbar--><!--Start Header-->
@@ -39,23 +35,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 header-parent d-flex justify-content-center">
-                    <div class="header-content">
-                        <div class="text-center">
-                            <span><i class="far fa-calendar fa-fw"></i>August 3rd to 5th</span>
-                            <span><i class="fas fa-map-marker-alt fa-fw"></i>Orlando, Florida</span>
+                    <div class="row">
+                        <div class="col-sm-12 header-content d-none d-md-block">
+                            <div class="text-center">
+                                <span><i class="far fa-calendar fa-fw"></i>August 3rd to 5th</span>
+                                <span><i class="fas fa-map-marker-alt fa-fw"></i>Orlando, Florida</span>
+                            </div>
                         </div>
-                        <div class="text-center">
-                            <h1>EVENTBIZ<span>'20</span></h1>
-                            <p>Largest digital event of the year.</p>
+                        <div class="col-sm-12 header-content-text d-none d-md-block">
+                            <div class="text-center">
+                                <h1>EVENTBIZ<span>'20</span></h1>
+                                <p>Largest digital event of the year.</p>
+                            </div>
                         </div>
-                        <div class="text-center">
-                            <button class="btn text-uppercase">get ticket</button>
-                            <button class="btn text-uppercase">view tour</button>
+                        <div class="col-sm-12 header-content-buttons">
+                            <div class="text-center">
+                                <button class="btn text-uppercase">get ticket</button>
+                                <button class="btn text-uppercase">view tour</button>
+                            </div>
                         </div>
-                        <div class="text-center d-flex justify-content-center">
-                            <span id="hours" class="d-block">0</span>
-                            <span id="minutes" class="d-block">0</span>
-                            <span id="seconds" class="d-block">0</span>
+                        <div class="col-sm-12 header-content-counter">
+                            <div class="text-center d-flex justify-content-center">
+                                <span id="hours" class="d-block">0</span>
+                                <span id="minutes" class="d-block">0</span>
+                                <span id="seconds" class="d-block">0</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,11 +121,11 @@
     <!--End About Event--><!--Start Speakers-->
     <div id="speakers" class="speakers block">
         <div class="container">
-            <div class="header-speakers text-center header-follow">
-                <h2><span>Event</span> Speakers</h2>
-                <p>We invites digital experts arround the world</p>
-            </div>
             <div class="row">
+                <div class="col-sm-12 header-speakers text-center header-follow">
+                    <h2><span>Event</span> Speakers</h2>
+                    <p>We invites digital experts arround the world</p>
+                </div>
                 <div class="col-md-4 speaker-info">
                     <div class="position-relative wow fadeInRight" data-wow-offset="100">
                         <div class="overlay position-absolute text-center">
@@ -264,12 +268,12 @@
     </div>
     <!--End Timer--><!--Start Scheudels-->
     <div id="scheudels" class="scheudels block">
-        <div class="scheudels-header header-follow text-center">
-            <h2><span>Event</span> Schedules</h2>
-            <span>Do not miss it and be sure to attend</span>
-        </div>
         <div class="container">
             <div class="row">
+                <div class="col-sm-12 scheudels-header header-follow text-center">
+                    <h2><span>Event</span> Schedules</h2>
+                    <span>Do not miss it and be sure to attend</span>
+                </div>
                 <div class="col-sm-12 btns-parent">
                     <div class="d-flex justify-content-center">
                         <div>
@@ -984,11 +988,11 @@
     <!--End Scheudels--><!--Start They Say-->
     <div class="say position-relative">
         <div class="overlay position-absolute"></div>
-        <div class="say-header header-follow text-center position-relative">
-            <h2><span>They</span> Say</h2>
-        </div>
         <div class="container">
             <div class="row">
+                <div class="col-sm-12 say-header header-follow text-center position-relative">
+                    <h2><span>They</span> Say</h2>
+                </div>
                 <div class="col-sm-12 say-info-parent">
                     <div class="row">
                         <div class="col-md-6 say-info first-show active">
@@ -1040,12 +1044,12 @@
     </div>
     <!--End They Say--><!--Start Sponsors-->
     <div id="sponsors" class="sponsors block">
-        <div class="sponsors-header header-follow text-center">
-            <h2><span>Event</span> Sponsors</h2>
-            <p>Check who make this event possible</p>
-        </div>
         <div class="container">
             <div class="row">
+                <div class="col-sm-12 sponsors-header header-follow text-center">
+                    <h2><span>Event</span> Sponsors</h2>
+                    <p>Check who make this event possible</p>
+                </div>
                 <div class="col-sm-12 header-gold-sponsors">
                     <span class="d-block text-center">Gold Sponsors</span>
                 </div>
@@ -1093,11 +1097,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 ticket-content">
-                    <div>
+                    <div class="position-relative overflow-hidden">
                         <div class="d-flex align-items-center justify-content-center header-ticket-price">
                             <div>
                                 <span class="d-block text-center">Early Bird</span>
-                                <span class="d-block price-ticket"><sup>$</sup><span>39</span><sub>/1 Person</sub></span>
+                                <span class="d-block price-ticket"><sup>$</sup><span class="font-weight-bold">39</span><sub>/1 Person</sub></span>
                             </div>
                         </div>
                         <ul class="list-unstyled list-ticket-price">
@@ -1113,14 +1117,14 @@
                     </div>
                 </div>
                 <div class="col-md-4 ticket-content">
-                    <div>
-                        <div class="text-ticket-trans position-absolute">
+                    <div class="position-relative overflow-hidden">
+                        <div class="text-ticket-trans position-absolute d-flex align-items-center justify-content-center">
                             Best Selling
                         </div>
                         <div class="d-flex align-items-center justify-content-center header-ticket-price">
                             <div>
                                 <span class="d-block text-center">Regular</span>
-                                <span class="d-block price-ticket"><sup>$</sup><span>99</span><sub>/1 Person</sub></span>
+                                <span class="d-block price-ticket"><sup>$</sup><span class="font-weight-bold">99</span><sub>/1 Person</sub></span>
                             </div>
                         </div>
                         <ul class="list-unstyled list-ticket-price">
@@ -1136,11 +1140,11 @@
                     </div>
                 </div>
                 <div class="col-md-4 ticket-content">
-                    <div>
+                    <div class="position-relative overflow-hidden">
                         <div class="d-flex align-items-center justify-content-center header-ticket-price">
                             <div>
                                 <span class="d-block text-center">Exclusive</span>
-                                <span class="d-block price-ticket"><sup>$</sup><span>199</span><sub>/1 Person</sub></span>
+                                <span class="d-block price-ticket"><sup>$</sup><span class="font-weight-bold">199</span><sub>/1 Person</sub></span>
                             </div>
                         </div>
                         <ul class="list-unstyled list-ticket-price">
@@ -1158,7 +1162,99 @@
             </div>
         </div>
     </div>
-    <!--End Tickets-->
+    <!--End Tickets--><!--Start Information-->
+    <div id="info" class="info block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 info-header header-follow text-center">
+                    <h2><span>Venue</span> Information</h2>
+                    <p>Everything you need, 24 hours</p>
+                </div>
+                <div class="col-md-4 text-center info-last-content">
+                    <div>
+                        <i class="far fa-flag fa-fw d-inline-block"></i>
+                        <h5>Venue</h5>
+                        <p>Large audiotorium with capacity of fifty thousand participants is also equipped with advanced facilities for your pleasure.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center info-last-content">
+                    <div>
+                        <i class="fas fa-bicycle fa-fw d-inline-block"></i>
+                        <h5>Transport</h5>
+                        <p>Large audiotorium with capacity of fifty thousand participants is also equipped with advanced facilities for your pleasure.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center info-last-content">
+                    <div>
+                        <i class="fas fa-map-marked-alt fa-fw d-inline-block"></i>
+                        <h5>Hotel</h5>
+                        <p>Large audiotorium with capacity of fifty thousand participants is also equipped with advanced facilities for your pleasure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.26601853108!2d31.34782007995779!3d31.04145496229743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2sMansoura%2C%20Mansoura%20Qism%202%2C%20Mansoura%2C%20Dakahlia%20Governorate!5e0!3m2!1sen!2seg!4v1608745958678!5m2!1sen!2seg"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 info-last-content text-center adress-content">
+                    <div>
+                        <i class="fas fa-mobile-alt fa-fw d-inline-block"></i>
+                        <h5>Call Us</h5>
+                        <p><span>(208)</span> 333 9296</p>
+                    </div>
+                </div>
+                <div class="col-md-4 info-last-content text-center adress-content">
+                    <div>
+                        <i class="fas fa-home fa-fw d-inline-block"></i>
+                        <h5>Address</h5>
+                        <p>
+                            <span class="d-block">Orange County Convention Center,</span>
+                            <span class="d-block">9800 International Dr,</span>
+                            <span class="d-block">Orlando, FL 32819, USA</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 info-last-content text-center adress-content">
+                    <div>
+                        <i class="far fa-envelope fa-fw d-inline-block"></i>
+                        <h5>Email Us</h5>
+                        <p>contact@eventbiz.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Information--><!--Start Footer-->
+    <div class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 social-footer">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-skype"></i>
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 last-block-page">
+                    &copy; CopyRight 2020 - All Right Reserved by <span><span>A</span> Abdelmoneam</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
 
 
     <script src="js/jQuery-3.5.1.js"></script>

@@ -1,0 +1,23 @@
+.button-up{
+    right: 40px;
+    bottom: 40px;
+    padding: 6px 10px;
+    background-color: $flatColor1;
+    color: $flatFFF;
+    z-index: 9999999;
+    border-radius: 2px;
+    cursor: pointer;
+    opacity: 0;
+    transition: $transition;
+    i{
+        font-size: 15px;
+        transition: $transition;
+    }
+    &.up-show{
+        opacity: 1;
+    }
+    &:hover{
+        background-color: #000;
+        color: $flatColor1;
+    }
+}

@@ -1,11 +1,13 @@
 .navbar-slide{
     top: 0;
-    left: -340px;
     bottom: 0;
     background-color: #0c313aad;
     z-index: 2;
     padding: 20px 30px 20px 50px;
-    width: auto;
+    width: 260px;
+    @media (max-width: 767px) {
+        padding-left: 0;
+    }
     .image-navbar{
         margin-top: 90px;
         margin-bottom: 30px;

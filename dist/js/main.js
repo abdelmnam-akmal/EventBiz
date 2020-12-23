@@ -145,6 +145,13 @@ $(function () {
     // header height set by js
     $('.header').height($(window).height());
 
+    // on click in the button-up page scroll to top
+    $('.button-up').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+
     // add active link on click & on scroll to his block
     $('.navbar-slide .links li').on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
@@ -176,6 +183,7 @@ $(function () {
     });
 
     // navbar slider
+    $('.navbar-slide').css('left', -$('.navbar-slide').innerWidth());
     $('.btn-navbar').on('click', function () {
         $(this).find('i').toggleClass('fa-bars fa-times');
         $('.navbar-slide').toggleClass('navbar-collapsed');
@@ -199,6 +207,13 @@ $(function () {
         if ($(window).scrollTop() > 1880) {
             $('.count').countTo();
             $('.timer .timer-show div span').removeClass('count');
+        }
+
+        // button scroll to up
+        if ($(window).scrollTop() > 700) {
+            $('.button-up').addClass('up-show');
+        } else {
+            $('.button-up').removeClass('up-show');
         }
     });
 

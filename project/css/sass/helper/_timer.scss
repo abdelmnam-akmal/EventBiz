@@ -7,6 +7,9 @@
         background-color: rgba(0, 0, 0, .7);
     }
     .timer-show{
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
         div{
             i{
                 font-size: 30px;
@@ -23,6 +26,9 @@
                 font-size: 14px;
                 margin-top: 20px;
                 letter-spacing: 2px;
+                @media (max-width: 767px) {
+                    margin-top: 10px;
+                }
             }
         }
     }

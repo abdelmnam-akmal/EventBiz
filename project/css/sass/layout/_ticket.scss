@@ -11,23 +11,18 @@
     }
     .ticket-content{
         div{
-            background-color: #222222;
+            background-color: $flat222;
             color: $flatFFF;
             border-radius: 10px;
-            position: relative;
-            overflow: hidden;
             .text-ticket-trans{
                 top: 23px;
                 left: -55px;
                 width: 65%;
                 height: 10%;
                 background-color: $flatColor1;
-                color: #222222;
+                color: $flat222;
                 z-index: 99;
                 border-radius: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 transform: rotate(-40deg);
                 letter-spacing: 2px;
             }
@@ -48,7 +43,6 @@
                         }
                         span{
                             font-size: 40px;
-                            font-weight: bold;
                             margin-right: 6px;
                         }
                         sub{

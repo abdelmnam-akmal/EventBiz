@@ -6,78 +6,99 @@
     }
     .header-parent{
         margin-top: 50px;
+        @media (max-width: 767px) {
+            padding-top: 100px;
+        }
         .header-content{
             color: $flatFFF;
             div{
                 margin-bottom: 30px;
-                &:first-child{
-                    span{
-                        margin: 30px;
+                span{
+                    margin: 30px;
+                    font-size: 20px;
+                    i{
                         font-size: 20px;
-                        i{
-                            font-size: 20px;
-                            margin-right: 10px;
-                            color: $flatColor1;
-                        }
+                        margin-right: 10px;
+                        color: $flatColor1;
                     }
                 }
-                &:nth-child(2){
-                    h1{
-                        font-size: 85px;
-                        font-weight: 600;
-                        letter-spacing: 3px;
-                        margin-bottom: 20px;
-                        span{
-                            color: $flatColor1;
-                            margin-left: 18px;
-                        }
-                    }
-                    p{
-                        font-size: 21px;
-                    }
-                }
-                &:nth-child(3) {
-                    margin-top: 60px;
-                    margin-bottom: 60px;
-                    button{
-                        background-color: $flatColor1;
-                        min-width: 125px;
-                        color: $flatFFF;
-                        font-size: 14px;
-                        padding: 8px 15px;
-                        border-radius: 15px;
-                        border: 1px solid $flatColor1;
-                        transition: $transition;
-                        &:hover{
-                            border: 1px solid $flatFFF;
-                            background-color: transparent;
-                        } 
-                        &:first-of-type{
-                            margin-right: 15px;
-                        }
-                    }
-                }
-                &:last-child{
+            }
+        }
+        .header-content-text{
+            div {
+                h1{
+                    font-size: 85px;
+                    font-weight: 600;
+                    letter-spacing: 3px;
+                    margin-bottom: 20px;
+                    color: $flatFFF;
                     span{
-                        font-size: 25px;
-                        margin-right: 30px;
+                        color: $flatColor1;
+                        margin-left: 18px;
+                    }
+                }
+                p{
+                    font-size: 21px;
+                    color: $flatFFF;
+                }
+            }
+        }
+        .header-content-buttons{
+            div {
+                margin-top: 60px;
+                margin-bottom: 60px;
+                button{
+                    background-color: $flatColor1;
+                    min-width: 125px;
+                    color: $flatFFF;
+                    font-size: 14px;
+                    padding: 8px 15px;
+                    border-radius: 15px;
+                    border: 1px solid $flatColor1;
+                    transition: $transition;
+                    @media (max-width: 767px) {
+                        display: block;
+                        margin: auto;
+                    }
+                    &:hover{
+                        border: 1px solid $flatFFF;
+                        background-color: transparent;
+                    } 
+                    &:first-of-type{
+                        margin-right: 15px;
+                        @media (max-width: 767px) {
+                            margin: 0 auto 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .header-content-counter{
+            div{
+                span{
+                    font-size: 25px;
+                    margin-right: 30px;
+                    color: $flatFFF;
+                    @media (max-width: 767px) {
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+                    &:after{
+                        content: 'Hours';
+                        display: block;
+                        font-size: 10px;
+                        text-align: center;
+                        margin-top: 15px;
+                    }
+                    &:nth-of-type(2) {
+                        &:after {
+                            content: 'Minutes'
+                        }
+                    }
+                    &:last-of-type{
+                        margin-right: 0;
                         &:after{
-                            content: 'Hours';
-                            display: block;
-                            font-size: 10px;
-                            text-align: center;
-                            margin-top: 15px;
-                        }
-                        &:nth-of-type(2) {
-                            &:after {
-                                content: 'Minutes'
-                            }
-                        }
-                        &:last-of-type{
-                            margin-right: 0;
-                            &:after{
-                                content: 'Seconds'
-                            }
+                            content: 'Seconds'
                         }
                     }
                 }

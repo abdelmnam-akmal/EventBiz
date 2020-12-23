@@ -33,6 +33,10 @@
             margin-bottom: 20px;
             color: $flat333;
             font-size: 18px;
+            @media (max-width: 767px) {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
             &:after{
                 content: 'Founder & CEO';
                 display: block;
