@@ -5,19 +5,26 @@
     .btns-parent{
         margin-bottom: 40px;
         div{
+            @media (max-width: 767px) {
+                display: block !important;
+            }
             div{
                 ul{
                     border: 1px solid $flatColor1;
                     overflow: hidden;
                     margin: 0;
                     border-radius: 60px;
+                    @media (max-width: 767px) {
+                        display: block !important;
+                    }
                     li{
                         padding: 12px 30px;
                         border: 1px solid $flatEEE;
                         cursor: pointer;
                         transition: $transition;
-                        border-right: 1px solid $flatColor1;
-                        border-left: 1px solid $flatColor1;
+                        @media (max-width: 767px) {
+                            border-bottom: 1px solid $flatColor1;
+                        }
                         h5{
                             font-size: 25px;
                             margin-bottom: 3px;
@@ -49,11 +56,20 @@
                             border-top-left-radius: 60px;
                             border-bottom-left-radius: 60px;
                             border-left: 1px solid $flatEEE;
+                            @media (max-width: 767px) {
+                                border-radius: 60px 60px 0 0;
+                                border: 1px solid $flatEEE;
+                                border-bottom: 1px solid $flatColor1;      
+                            }
                         }
                         &:last-of-type{
                             border-top-right-radius: 60px;
                             border-bottom-right-radius: 60px;
                             border-right: 1px solid $flatEEE;
+                            @media (max-width: 767px) {
+                                border-radius: 0 0 60px 60px;
+                                border: 1px solid $flatEEE;       
+                            }
                         }
                         &:not(.active):hover{
                             background-color: $flatDDD;
@@ -71,11 +87,20 @@
         transition: $transition;
         .time-scheu{
             color: #726b6b;
+            span{
+                @media (max-width: 767px) {
+                    display: block;
+                    margin-bottom: 15px;
+                }
+            }
         }
         .image-scheu{
             position: relative;
             border-radius: 50%;
             cursor: pointer;
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
             .overlay{
                 position: absolute;
                 top: -140px;
@@ -106,6 +131,9 @@
             }
         }
         .header-scheu{
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
             h6{
                 font-size: 15px;
                 margin: 0;

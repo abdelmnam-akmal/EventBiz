@@ -10,23 +10,35 @@
     .say-info-parent{
         .say-info{
             display: none;
+            @media (max-width: 767px) {
+                margin-bottom: 30px;;
+            }
             &.active{
                 display: block;
             }
             div{
                 padding-right: 20px;
                 padding-left: 20px;
+                @media (max-width: 767px) {
+                    padding: 0;
+                }
                 div{
                     i{
                         margin-top: 6px;
                         margin-right: 20px;
                         color: $flatColor1;
+                        @media (max-width: 767px) {
+                            margin-right: 10px;;
+                        }
                     }
                 }
                 span{
                     color: $flatColor1;
                     font-size: 15px;
                     margin-top: 15px;
+                    @media (max-width: 767px) {
+                        margin-top: 5px;;
+                    }
                 }
             }
         }

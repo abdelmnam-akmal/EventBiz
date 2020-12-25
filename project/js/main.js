@@ -2,6 +2,11 @@ $(function () {
 
     'use strict';
 
+    // hide css spinner
+    $('.loader-me').fadeOut(800, function () {
+        $('body').css('overflow', 'auto');
+    });
+
     // start wow js
     new WOW().init();
     // header height set by js
